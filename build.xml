@@ -77,8 +77,8 @@
 	  </war>
    </target>
 	<target name="initarti">
-        <antcall target="cleanpom" />
-        <antcall target="deploy" />               
+                <antcall target="deploy" />   
+		<antcall target="cleanpom" />
     </target>
 	   
 	 <target name="deploy" >
