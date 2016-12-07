@@ -41,14 +41,11 @@
     
     <target name="init">
         <mkdir dir="bin"/>
-	    <antcall target="clean" />
-        <antcall target="deploy" />
-    </target>
+	       </target>
     <target name="clean">
         <delete dir="bin"/>
 		<delete file="${ARCHIVE_DIR}/${warname}" />	
-	    <delete file="${artifact.pom}" />
-    </target>
+	        </target>
     <target name="build" depends="build-project,build-war"/>
     <target name="cleanall" depends="clean"/>
     <target name="build-project" depends="clean,init">
@@ -75,8 +72,12 @@
 	  	<classes dir="bin"/>
 	  </war>
    </target>
+	<target name="initarti">
+        <antcall target="cleanpom" />
+        <antcall target="deploy" />               
+    </target>
 	   
-	 <target name="deploy">
+	 <target name="deploy" >
         <artifact:pom id="tmp.pom" groupid="${artifact.group}" artifactid="${artifact.name}" version="${artifact.version}" packaging="${artifact.type}" name="${artifact.name}" />
         <artifact:writepom pomRefId="tmp.pom" file="${artifact.pom}"/>
         <artifact:deploy file="${build.dir}/${artifact.name}-${artifact.version}.${artifact.type}">
@@ -91,6 +92,9 @@
     </target>
      
     <!-- clean-task for deletion of an earlier created temporary pom-file -->
+	<target name="cleanpom">
+        <delete file="${artifact.pom}" />
+    </target>
     	
    <target name="unit-test-2" depends="build-project,build-war"> 
 	 
