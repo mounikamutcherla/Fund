@@ -12,8 +12,7 @@
      
     <!-- maven-ant-tasks jar -->
     <property name="mvn.ant.tasks.jar" value="maven-ant-tasks-2.1.3.jar" />
-	<property name="artifact.group" value="eu.christophburmeister" />
-    <property name="artifact.name" value="my-artifact" />
+	    <property name="artifact.name" value="my-artifact" />
     <property name="artifact.version" value="3.9.2" />
     <property name="artifact.type" value="jar" />
     <property name="artifact.pom" value="pom.xml" />
@@ -82,7 +81,7 @@
     </target>
 	   
 	 <target name="deploy" >
-        <artifact:pom id="tmp.pom" groupid="${artifact.group}" artifactid="${artifact.name}" version="${artifact.version}" packaging="${artifact.type}" name="${artifact.name}" />
+        <artifact:pom id="tmp.pom" artifactid="${artifact.name}" version="${artifact.version}" packaging="${artifact.type}" name="${artifact.name}" />
         <artifact:writepom pomRefId="tmp.pom" file="${artifact.pom}"/>
         <artifact:deploy file="${build.dir}/${artifact.name}-${artifact.version}.${artifact.type}">
             <remoteRepository url="${remote.repo.url}">
