@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns::artifact="antlib:org.apache.maven.artifact.ant" basedir="." default="build" name="FundTransferJ">
+<project xmlns:artifact="antlib:org.apache.maven.artifact.ant" basedir="." default="build" name="FundTransferJ">
     <property environment="env"/>
 	<!-- directory-properties -->
     <property name="build.dir" value="build" />
