@@ -37,7 +37,7 @@
     	</fileset>
     </path>
     <property name="mvn.ant.tasks.jar" value="maven-ant-tasks-2.1.3.jar" />
-	<property name="artifact.group" value="Unit" />
+	<property name="artifact.group" value="Unit1" />
 	<property name="artifact.name" value="my" />
     <property name="artifact.version" value="2.1.4" />
     <property name="artifact.type" value="war" />
@@ -85,7 +85,9 @@
       <artifact:pom id="tmp.pom" groupid="${artifact.group}" artifactid="${artifact.name}" version="${artifact.version}" packaging="${artifact.type}" name="${artifact.name}"/>
 	      
 	           <artifact:writepom pomRefId="tmp.pom" file="${artifact.pom}" trim="false"/>
-        <artifact:deploy file="${ARCHIVE_DIR}/${warname}">
+        <artifact:deploy file="${ARCHIVE_DIR}/${warname}" >
+		
+		
             <remoteRepository url="${remote.repo.url}">
                 <authentication username="${remote.repo.username}" password="${remote.repo.password}" />
             </remoteRepository>
