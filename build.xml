@@ -79,7 +79,7 @@
    </target>
 	<target name="initarti">
                 <antcall target="deploy" />   
-		<antcall target="cleanpom" />
+		<!--<antcall target="cleanpom" />-->
     </target>
 	   
 	 <target name="deploy" >
