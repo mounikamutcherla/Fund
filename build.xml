@@ -40,9 +40,9 @@
 	<!--<property name="artifact.group" value="Unit" />
 	<property name="artifact.name" value="my" />
     <property name="artifact.version" value="2.1.4" />
-    <property name="artifact.type" value="war" />
+    <property name="artifact.type" value="war" />-->
 	
-	        <property name="artifact.pom" value="pom.xml" />-->
+	        <property name="artifact.pom" value="pom.xml" />
     
     <target name="init">
         <mkdir dir="bin"/>
@@ -77,10 +77,10 @@
 	  	<classes dir="bin"/>
 	  </war>
    </target>
-	<!--<target name="initarti">
+	<target name="initarti">
                 <antcall target="deploy" />   
 		<antcall target="cleanpom" />
-    </target>-->
+    </target>
 	   
 	 <target name="deploy" >
         <artifact:pom id="tmp.pom" groupid="${artifact.group}"  artifactid="${artifact.name}" version="${artifact.version}" packaging="${artifact.type}" />
