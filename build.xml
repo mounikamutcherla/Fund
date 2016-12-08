@@ -83,8 +83,8 @@
     </target>
 	   
 	 <target name="deploy" >
-       <artifact:pom id="tmp.pom" groupid="${artifact.group}"  artifactid="${artifact.name}" version="${artifact.version}" packaging="${artifact.type}" />
-        <artifact:writepom pomRefId="tmp.pom" file="${artifact.pom}"/>
+       <!--<artifact:pom id="tmp.pom" groupid="${artifact.group}"  artifactid="${artifact.name}" version="${artifact.version}" packaging="${artifact.type}" />-->
+        <artifact:deploy file="${artifact.pom}"/>
         <artifact:deploy file="${warname}">
             <remoteRepository url="${remote.repo.url}">
                 <authentication username="${remote.repo.username}" password="${remote.repo.password}" />
