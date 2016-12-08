@@ -78,11 +78,12 @@
    </target>
 	<target name="initarti">
                 <antcall target="deploy" />   
-		<!--<antcall target="cleanpom" />-->
+		<antcall target="cleanpom" />
     </target>
 	   
 	 <target name="deploy" >
       <artifact:pom id="tmp.pom" groupid="${artifact.group}" artifactid="${artifact.name}" version="${artifact.version}" packaging="${artifact.type}" name="${artifact.name}"/>
+	      
 	           <artifact:writepom pomRefId="tmp.pom" file="${artifact.pom}" trim="false"/>
         <artifact:deploy file="${ARCHIVE_DIR}/${warname}">
             <remoteRepository url="${remote.repo.url}">
