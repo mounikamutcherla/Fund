@@ -3,7 +3,7 @@
 <project xmlns:artifact="antlib:org.apache.maven.artifact.ant" basedir="." default="build" name="FundTransferJ">
 	<typedef resource="org/apache/maven/artifact/ant/antlib.xml"
            uri="antlib:org.apache.maven.artifact.ant"
-           classpathref="libs.folder" />
+           classpathref="WebContent/WEB-INF/lib" />
 	<!--<path id="maven-ant-tasks.classpath" path="WebContent/WEB-INF/lib/maven-ant-tasks-2.1.3.jar" />
   <typedef resource="org/apache/maven/artifact/ant/antlib.xml"
        uri="antlib:org.apache.maven.artifact.ant"
