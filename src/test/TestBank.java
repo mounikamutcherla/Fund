@@ -43,7 +43,7 @@ DesireCaps.setJavascriptEnabled(true);
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.id("password")).sendKeys("demo");
 		String s1 = driver.findElement(
-				By.xpath("html/body/div[2]/div/div/div/div[2]/div/div/form/div[5]/div[1]/button")).getText();
+			By.xpath("html/body/div[2]/div/div/div/div[2]/div/div/form/div[5]/div[1]/button")).getText();
 		System.out.println("Login Button" + s1);
 		driver.findElement(By.xpath("html/body/div[2]/div/div/div/div[2]/div/div/form/div[5]/div[1]/button")).click();
 		Thread.sleep(15000);
