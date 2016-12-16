@@ -24,10 +24,10 @@ public class TestBank {
 	 System.out.println("*****Inside TestBank Class For Selenium Code Execution..\n");
 	 Thread.sleep(18000);
     DesiredCapabilities DesireCaps = new DesiredCapabilities();
-/* DesireCaps.setJavascriptEnabled(true);*/
-	 DesireCaps.setCapability(PhantomJSDriverService.PHANTOMJS_GHOSTDRIVER_CLI_ARGS,"/var/jenkins_home/jobs/Fund-TransferJ/workspace/driver/phantomjs");
+DesireCaps.setJavascriptEnabled(true);
+	/* DesireCaps.setCapability(PhantomJSDriverService.PHANTOMJS_GHOSTDRIVER_CLI_ARGS,"/var/jenkins_home/jobs/Fund-TransferJ/workspace/driver/phantomjs");*/
 /*	DesireCaps.setCapability(PhantomJSDriverService.PHANTOMJS_GHOSTDRIVER_PATH_PROPERTY,"/home/phantomjs");*/
-    /*DesireCaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,"/var/jenkins_home/jobs/Fund-TransferJ/workspace/driver/phantomjs");*/
+    DesireCaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,"/var/jenkins_home/jobs/Fund-TransferJ/workspace/driver/phantomjs");
 	/* DesireCaps.setCapability("phantom.binary.path","/home/phantomjs");*/
 	 
 	 
