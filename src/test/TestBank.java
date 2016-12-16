@@ -28,8 +28,7 @@ DesireCaps.setJavascriptEnabled(true);
 	/* DesireCaps.setCapability("phantom.binary.path","/home/phantomjs");*/
 	 
 	 
-	 
-		System.out.print("*****Read the file in the path.......\n");		
+	 		System.out.print("*****Read the file in the path.......\n");		
 	WebDriver driver = new PhantomJSDriver(DesireCaps);
    /*	System.out.println(driver.getCapabilities()); */
 		System.out.println("*****Driver Executed in linux......\n");	
