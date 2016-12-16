@@ -4,7 +4,6 @@ import static org.junit.Assert.fail;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
 import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
