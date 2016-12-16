@@ -15,7 +15,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
 
 public class TestBank {
-
 	 		@Test
 	public void testBank() throws InterruptedException {
 	 System.out.println("*****Inside TestBank Class For Selenium Code Execution..\n");
